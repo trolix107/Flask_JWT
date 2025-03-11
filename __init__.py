@@ -16,7 +16,7 @@ app.config["JWT_SECRET_KEY"] = "Ma_clé_secrete"  # Ma clée privée
 jwt = JWTManager(app)
 
 @app.route('/') 
-def hello_world():
+def hello_world(): 
     return render_template('accueil.html')
 
 # Création d'une route qui vérifie l'utilisateur et retour un Jeton JWT si ok.
